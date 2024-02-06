@@ -11,8 +11,22 @@ function media(){
     var media3 = document.getElementById("media3").valueAsNumber;
     var resMedia = (media1 + media2 + media3) / 3;
     document.getElementById("resMedia").textContent = resMedia.toFixed(2);
+    var x  = document.getElementById(media1).valueAsNumber;
+    var x  = document.getElementById(media2).valueAsNumber;
+    var x  = document.getElementById(media3).valueAsNumber;
+    var resMedia  = (media1 + media2 + media3) /3;
+    if(resMedia > 7){
+        x.style.color = "green"
+    }
+    else{
+        x.style.color = "red"
+    }
 }
+
+
+
 
 function limpar(){
     window.location.reload();
 }
+
